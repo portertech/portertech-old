@@ -11,9 +11,9 @@ end
 
 # Rewrite to keep the Google juice
 use Rack::Rewrite do
-  r301 %r{(.*)}, 'http://portertech.ca$1', :if => Proc.new do |rack_env|
+  r301 %r{(.*)}, 'http://portertech.ca$1', :if => Proc.new { |rack_env|
     rack_env['SERVER_NAME'] =~ /^www\./i
-  end
+  }
   r301 '/phones-servers-user-experience', '/2010/07/19/phones-servers-and-user-experience/'
   r301 '/fantasy-cricket-the-infrastructure', '/2010/05/28/fantasy-cricket-on-the-rackspace-cloud/'
   r301 '/homebrew-rvm-awesome', '/2010/03/26/homebrew--rvm--awesome/'
