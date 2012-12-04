@@ -1,5 +1,7 @@
 require 'toto'
 require 'rack-rewrite'
+require 'coderay'
+require 'rack/codehighlighter'
 
 # Rack config
 use Rack::Static, :urls => ['/css', '/scripts', '/images', '/favicon.ico'], :root => 'public'
@@ -20,6 +22,8 @@ use Rack::Rewrite do
   r301 '/perfumecom-on-ec2-part-1-of-3', '/2010/02/28/perfumecom-on-aws/'
   r301 %r{^(.*[^/])$}, '$1/', :not => '/index.xml'
 end
+
+use Rack::Codehighlighter, :coderay, :markdown => true, :element => "p>code", :pattern => /\A:::(\w+)\s*\n/
 
 #
 # Create and configure a toto instance

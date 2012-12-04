@@ -12,10 +12,11 @@ The goals had been set and a raw path laid out, the big decision had to be made.
 I will begin with a brief layout and explanation of the infrastructure. This is just the first of many posts to come.
 
 Amazon Web Services to be used:
-       * EC2 (Elastic Compute Cloud) with Auto Scaling
-       * S3 (Simple Storage Service)
-       * ELB (Elastic Load Balancing)
-       * CloudWatch
+
+- EC2 (Elastic Compute Cloud) with Auto Scaling 
+- S3 (Simple Storage Service) 
+- ELB (Elastic Load Balancing) 
+- CloudWatch 
 
 To help with the explanation, I created this very pretty diagram for you.
 
