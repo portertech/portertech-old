@@ -35,7 +35,7 @@ toto = Toto::Server.new do
   set :date do |now|
     now.strftime("%B #{now.day.ordinal} %Y")   # date format for articles
   end
-  set :markdown,  :strict                      # use markdown + smart-mode
+  set :markdown,  :smart                       # use markdown + smart-mode
   set :disqus,    'portertech'                 # disqus id, or false
   set :summary,   :max => 150, :delim => /~\n/ # length of article summary and delimiter
   set :ext,       'txt'                        # file extension for articles
