@@ -4,7 +4,7 @@ require 'coderay'
 require 'rack/codehighlighter'
 
 # Rack config
-use Rack::Static, :urls => ['/css', '/scripts', '/images', '/favicon.ico'], :root => 'public'
+use Rack::Static, :urls => ['/css', '/images', '/favicon.ico'], :root => 'public'
 use Rack::CommonLogger
 
 if ENV['RACK_ENV'] == 'development'
