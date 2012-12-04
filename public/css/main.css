@@ -33,21 +33,21 @@ header, footer, section, article {
   margin-right: 30px;
 }
 a {
-  color: #b83000;
-}
-h1 a {
-  color: black;
+  color: #F53A99;
   text-decoration: none;
 }
 a:hover {
+  color: #F53A99;
   text-decoration: underline;
+}
+h1 a {
+  text-decoration: none;
 }
 body > header > h1 {
 	border-left: 30px solid black;
 	padding-left: 30px;
   font-size: 201px;
   margin: 100px 0 15px 0;
-  font-weight: normal;
 }
 .post header {
 	margin-bottom: 10px;
@@ -84,6 +84,7 @@ body > header {
 	margin-bottom: 20px;
 }
 h1, h2, h3, h4 {
+  color: #F53A99;
   display: inline;
   margin: 0;
   font-weight: 600;

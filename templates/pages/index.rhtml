@@ -2,7 +2,7 @@
   <% articles.select {|a| a[:date] <= Date.today}[0...3].each do |article| %>
     <article class="post">
       <header>
-        <h1><a href="<%= article.path %>"><%= article.title %></a></h1>
+        <h3><a href="<%= article.path %>"><%= article.title %></a></h3>
         <span class="date"><%= article.date %></span>
       </header>
 
@@ -17,4 +17,3 @@
 <section id="archives">
   <%= archives[3..-1] %>
 </section>
-
