@@ -11,6 +11,12 @@ body {
 header, footer, section, article {
 	display: block;
 }
+#fork {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
 #content {
 }
 #by {
