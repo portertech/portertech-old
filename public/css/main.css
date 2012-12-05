@@ -1,5 +1,9 @@
 html { margin: 20px }
 body {
+  background: #fff url('/images/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 2px 62px;
   margin: 0 auto;
   font-family: 'Baskerville', Georgia, Times, serif;
   font-size: 20px;
