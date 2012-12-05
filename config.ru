@@ -23,7 +23,7 @@ use Rack::Rewrite do
   r301 %r{^(.*[^/])$}, '$1/', :not => '/index.xml'
 end
 
-use Rack::Codehighlighter, :coderay, :markdown => true, :element => "p>code", :pattern => /\A:::(\w+)\s*\n/
+use Rack::Codehighlighter, :coderay, :markdown => true, :element => "code", :pattern => /\A:::(\w+)\s+/
 
 #
 # Create and configure a toto instance
