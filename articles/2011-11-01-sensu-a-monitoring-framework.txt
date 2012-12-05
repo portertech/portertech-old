@@ -1,4 +1,3 @@
----
 title: Sensu, a monitoring framework
 description: A monitoring tool designed for the cloud
 author: Sean Porter
