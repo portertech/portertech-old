@@ -82,7 +82,12 @@ menu, header, footer, section, article {
   margin-bottom: 10px;
 }
 .post p {
-  margin: 10px 0;
+  display: inline-block;
+  margin: 12px 0;
+}
+.post h4 {
+  display: inline-block;
+  margin: 15px 0 0 0;
 }
 .post .more {
   margin-top: -10px;

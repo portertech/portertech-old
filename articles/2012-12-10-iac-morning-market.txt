@@ -1,0 +1,34 @@
+title: IaC Morning Market
+description: A problem solving process for infrastructure as code
+author: Sean Porter
+date: 12/10/2012
+
+**Morning market**: A daily routine that involves examining rejects made the previous day before work begins so that countermeasures can be adopted as soon as possible.
+
+I recently read "[Gemba Kaizen](http://www.amazon.com/Gemba-Kaizen-Commonsense-Management-ebook/dp/B006402MAG)" by Masaaki Imai, a fantastic book that introduced me to the idea of the morning market. After putting down the book, I began to think of ways I could apply this idea to web operations, and more specifically Infrastructure as Code.
+
+I would like to share my thoughts on creating a morning market for Infrastructure as Code. This post is fairly OpsCode Chef centric, however, I am certain it can still be helpful to those using another toolkit.
+
+The amount of interest in Chef cookbook design and testing has recently exploded. Tools have emerged, books and blog post have been written, and conference attendees rant with beer(s) in hand. The amount of energy and traction is fantastic, however, I do not hear enough about the observation of production Chef runs. There is nothing quite like production (yes, a cliché); this is where Chef does its business, ideally bringing systems into the expected state. A Chef cookbook morning market could entail the daily (or frequent) review of Chef runs, followed by the creation of prioritized tasks, to solve problems and improve efficiency.
+
+#### The Gathering
+
+A morning market is a problem solving process. In order to fully understand a problem and find a solution, one must first gather relevant data. Chef and many other tools like it, offer a report and exception API, a way to execute code in response to a run succeeding or failing. This API is perfect for gathering the data needed to identify, understand, and fix problems. I have created a few handlers for my own experiments, which are available on GitHub.
+
+* [Chef Metrics](https://github.com/portertech/chef-metrics), for collecting run metrics.
+* [Chef IRC Snitch](https://github.com/portertech/chef-irc-snitch), for recording run exceptions and notifying individuals via IRC.
+* [Chef Journalist](https://github.com/portertech/chef-journalist), for providing a list of updated resources for the run.
+
+![Chef Metrics](/images/2012-12-10/chef-metrics.png)
+
+At the recent Chef Community Summit, I had the pleasure to attend a session on [Chef Driven Monitoring and Metrics](http://wiki.opscode.com/display/chef/Chef+driven+Monitoring+and+Metrics), where we discussed sub topics ranging from “what to record?” to “tools used?”. A few tools mentioned in the session tickled my fancy, and I recommend checking them out.
+
+* [Chef Elapsed Time](https://github.com/jamesc/chef-handler-elapsed-time), for a per-resource elapsed time report.
+* [Grill](http://cyclecomputing.com/grill/overview), a Chef run monitoring tool, unfortunately it’s **freeware**.
+* [Bistro](https://github.com/ampledata/bistro), a [Splunk](http://www.splunk.com/) application for Chef, in combination with the [Splunk handler](https://github.com/ampledata/chef-handler-splunk).
+
+#### The Meeting
+
+A morning market is a meeting, to quickly review the status of what is being worked on, identify new problems, and quickly manage who is working on what until the next meeting. Problems are not solved during a morning market, it simply facilitates the effective organization of work.
+
+In web operations, many distributed teams already have a daily “standup” meeting, sharing many qualities with the morning market.
