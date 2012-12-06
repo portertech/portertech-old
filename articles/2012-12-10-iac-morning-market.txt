@@ -1,7 +1,7 @@
 title: IaC Morning Market
 description: A problem solving process for infrastructure as code
 author: Sean Porter
-date: 12/10/2012
+date: 10/12/2012
 
 **Morning market**: A daily routine that involves examining rejects made the previous day before work begins so that countermeasures can be adopted as soon as possible.
 
@@ -31,4 +31,3 @@ At the recent Chef Community Summit, I had the pleasure to attend a session on [
 
 A morning market is a meeting, to quickly review the status of what is being worked on, identify new problems, and quickly manage who is working on what until the next meeting. Problems are not solved during a morning market, it simply facilitates the effective organization of work.
 
-In web operations, many distributed teams already have a daily “standup” meeting, sharing many qualities with the morning market.
