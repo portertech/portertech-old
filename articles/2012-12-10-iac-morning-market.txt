@@ -5,7 +5,7 @@ date: 10/12/2012
 
 **Morning market**: A daily routine that involves examining rejects made the previous day before work begins so that countermeasures can be adopted as soon as possible.
 
-I recently read "[Gemba Kaizen](http://www.amazon.com/Gemba-Kaizen-Commonsense-Management-ebook/dp/B006402MAG)" by Masaaki Imai, a fantastic book that introduced me to the idea of the morning market. After putting down the book, I began to think of ways I could apply this idea to IT operations, and more specifically Infrastructure as Code.
+I recently read "[Gemba Kaizen](http://www.amazon.com/Gemba-Kaizen-Commonsense-Management-ebook/dp/B006402MAG)" by Masaaki Imai, a fantastic book that introduced me to the idea of the morning market. After putting down the book, I began to think of ways I could apply this idea to IT operations, and more specifically **I**nfrastructure **a**s **C**ode.
 
 I would like to share my thoughts on creating a morning market for Infrastructure as Code. This post is fairly OpsCode Chef centric, however, I am certain it can still be helpful to those using another toolkit.
 
@@ -40,3 +40,8 @@ Problems identified could be categorized by what is known about them, for instan
 * A third-party SCM service outage causes run failures.
 * Chef daemon is consuming a large amount of memory, ineffective GC.
 
+#### Final Words
+
+I believe any organization can benefit greatly from organized problem solving. I see the morning market as a simple yet effective process for rapid problem resolution. Implementing such a process for **I**nfrastructure **a**s **C**ode seems like a no-brainer, however, there is still much to ponder. How will it coincide with other processes, and will they compliment each other? How will resources, people and their time, be allocated? How will effectiveness be measured?
+
+We’re problem solvers.
