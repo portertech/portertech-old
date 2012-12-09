@@ -60,6 +60,9 @@ menu, header, footer, section, article {
 #path {
   color: #b53131;
 }
+.author {
+  display: none
+}
 .date {
   font-style: italic;
   float: right;

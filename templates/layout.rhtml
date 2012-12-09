@@ -3,10 +3,10 @@
   <head>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/coderay.css">
-    <link rel="alternate" type="application/atom+xml" title="Feed - PorterTech" href="/index.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Feed | PorterTech" href="/index.xml" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="<%= @context[:description] || 'Sean Porter\'s blog on system automation & administration.' %>" />
+    <meta name="description" content="<%= @context[:description] || 'Sean Porter\'s blog on system automation and administration.' %>" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-6859515-3']);
@@ -21,14 +21,14 @@
         s.parentNode.insertBefore(ga, s);
       })();
     </script>
-    <title><%= title %></title>
+    <title><%= title %> | PorterTech</title>
   </head>
   <body>
     <a href="https://github.com/portertech"><img id="fork" src="/images/fork.png" alt="Fork me on GitHub" /></a>
     <menu>
       <a href="/archives/">archives</a>
       <a href="/index.xml" rel="alternate" type="application/atom+xml">rss</a>
-      <a href="http://about.me/seanporter">whois</a>
+      <a href="http://about.me/seanporter" rel="author">whois</a>
     </menu>
     <section>
       <%= yield %>
