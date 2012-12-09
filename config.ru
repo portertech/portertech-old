@@ -45,6 +45,8 @@ toto = Toto::Server.new do
   set :ext,       'txt'                        # file extension for articles
   set :cache,     28800                        # cache duration, in seconds
   set :url,       'http://portertech.ca'       # blog url
+
+  set :description, "Sean Porter's blog on system automation and administration."
 end
 
 run toto
