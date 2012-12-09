@@ -5,11 +5,11 @@ date: 10/12/2012
 
 **Morning market**: A daily routine that involves examining rejects made the previous day before work begins so that countermeasures can be adopted as soon as possible.
 
-I recently read "[Gemba Kaizen](http://www.amazon.com/Gemba-Kaizen-Commonsense-Management-ebook/dp/B006402MAG)" by Masaaki Imai, a fantastic book that introduced me to the idea of the morning market. After putting down the book, I began to think of ways I could apply this idea to web operations, and more specifically Infrastructure as Code.
+I recently read "[Gemba Kaizen](http://www.amazon.com/Gemba-Kaizen-Commonsense-Management-ebook/dp/B006402MAG)" by Masaaki Imai, a fantastic book that introduced me to the idea of the morning market. After putting down the book, I began to think of ways I could apply this idea to IT operations, and more specifically Infrastructure as Code.
 
 I would like to share my thoughts on creating a morning market for Infrastructure as Code. This post is fairly OpsCode Chef centric, however, I am certain it can still be helpful to those using another toolkit.
 
-The amount of interest in Chef cookbook design and testing has recently exploded. Tools have emerged, books and blog post have been written, and conference attendees rant with beer(s) in hand. The amount of energy and traction is fantastic, however, I do not hear enough about the observation of production Chef runs. There is nothing quite like production (yes, a cliché); this is where Chef does its business, ideally bringing systems into the expected state. A Chef cookbook morning market could entail the daily (or frequent) review of Chef runs, followed by the creation of prioritized tasks, to solve problems and improve efficiency.
+The amount of interest in Chef cookbook design and testing has recently exploded. Tools have emerged, books and blog posts have been written, and conference attendees rant with beer(s) in hand. The amount of energy and traction is fantastic, however, I do not hear enough about the observation of production Chef runs. There is nothing quite like production (yes, a cliché); this is where Chef does its business, ideally bringing systems into an expected state. A Chef cookbook morning market could entail the daily review of Chef runs, followed by the creation of prioritized tasks, to solve immediate problems and improve efficiency.
 
 #### The Gathering
 
@@ -17,7 +17,7 @@ A morning market is a problem solving process. In order to fully understand a pr
 
 * [Chef Metrics](https://github.com/portertech/chef-metrics), for collecting run metrics.
 * [Chef IRC Snitch](https://github.com/portertech/chef-irc-snitch), for recording run exceptions and notifying individuals via IRC.
-* [Chef Journalist](https://github.com/portertech/chef-journalist), for providing a list of updated resources for the run.
+* [Chef Journalist](https://github.com/portertech/chef-journalist), for providing a list of updated resources.
 
 ![Chef Metrics](/images/2012-12-10/chef-metrics.png)
 
@@ -29,5 +29,14 @@ At the recent Chef Community Summit, I had the pleasure to attend a session on [
 
 #### The Meeting
 
-A morning market is a meeting, to quickly review the status of what is being worked on, identify new problems, and quickly manage who is working on what until the next meeting. Problems are not solved during a morning market, it simply facilitates the effective organization of work.
+A morning market is a meeting, to quickly review the status of what is being worked on, identify new problems, and quickly manage who is working on what until the next meeting. Problems are not solved during a morning market, it simply facilitates the effective organization of work. There will always be the temptation to discuss details and ask questions, but this is to be done after the meeting, by those assigned to the problem.
+
+Problems identified could be categorized by what is known about them, for instance, the cause of a problem may or may not be known or understood. Categorizing problems could help identify how much effort may be required to solve them. Problems could be prioritized by severity, for example, one that prevents application deployment would have a higher priority than a garbage collection issue. As any process, a morning market would evolve and be refined, and the problems identified will vary as systems change.
+
+* A service fails to start on newly bootstrapped nodes.
+* A resource is not idempotent, causing a service to restart on every run.
+* Application deployment occasionally fails on a number of nodes.
+* Search results are not limited to an environment, causing clustering issues.
+* A third-party SCM service outage causes run failures.
+* Chef daemon is consuming a large amount of memory, ineffective GC.
 
