@@ -27,6 +27,8 @@ At the recent Chef Community Summit, I had the pleasure to attend a session on [
 * [Grill](http://cyclecomputing.com/grill/overview), a Chef run monitoring tool, unfortunately it’s **freeware**.
 * [Bistro](https://github.com/ampledata/bistro), a [Splunk](http://www.splunk.com/) application for Chef, in combination with the [Splunk handler](https://github.com/ampledata/chef-handler-splunk).
 
+These tools can be used in conjunction with traditional monitoring and metric tools, providing visibility into systems and the Chef code that configures them.
+
 #### The Meeting
 
 A morning market is a meeting, to quickly review the status of what is being worked on, identify new problems, and quickly manage who is working on what until the next meeting. Problems are not solved during a morning market, it simply facilitates the effective organization of work. There will always be the temptation to discuss details and ask questions, but this is to be done after the meeting, by those assigned to the problem.
@@ -44,4 +46,3 @@ Problems identified could be categorized by what is known about them, for instan
 
 I believe any organization can benefit greatly from organized problem solving. I see the morning market as a simple yet effective process for rapid problem resolution. Implementing such a process for **I**nfrastructure **a**s **C**ode seems like a no-brainer, however, there is still much to ponder. How will it coincide with other processes, and will they compliment each other? How will resources, people and their time, be allocated? How will effectiveness be measured?
 
-We’re problem solvers.
