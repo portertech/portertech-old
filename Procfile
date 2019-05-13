@@ -1,1 +1,1 @@
-web: bundle exec thin start -p $PORT
+web: bundle exec falcon serve --port $PORT --bind 'http://0.0.0.0' -n 1
