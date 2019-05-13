@@ -1,4 +1,7 @@
 source :rubygems
+
+ruby '2.4.1'
+
 gem 'builder', '2.1.2'
 gem 'rdiscount', '1.6.8'
 gem 'rack-rewrite', '1.2.1'
