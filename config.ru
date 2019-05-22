@@ -2,10 +2,14 @@ require 'toto'
 require 'rack-rewrite'
 require 'coderay'
 require 'rack/codehighlighter'
+require 'prometheus/middleware/collector'
+require 'prometheus/middleware/exporter'
 
 # Rack config
 use Rack::Static, :urls => ['/css', '/images', '/favicon.ico'], :root => 'public'
 use Rack::CommonLogger
+use Prometheus::Middleware::Collector
+use Prometheus::Middleware::Exporter
 
 if ENV['RACK_ENV'] == 'development'
   use Rack::ShowExceptions
